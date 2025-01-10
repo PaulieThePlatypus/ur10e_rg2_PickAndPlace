@@ -1,0 +1,2 @@
+set(ur10e_rg2_moveit_MESSAGE_FILES "/home/paul/Project/ur10e_rg2_PickAndPlace/ROS/src/ur10e_rg2_moveit/msg/UniversalRobotsJointsMsg.msg;/home/paul/Project/ur10e_rg2_PickAndPlace/ROS/src/ur10e_rg2_moveit/msg/Ur10eMoveitJoints.msg;/home/paul/Project/ur10e_rg2_PickAndPlace/ROS/src/ur10e_rg2_moveit/msg/Ur10eTrajectory.msg")
+set(ur10e_rg2_moveit_SERVICE_FILES "/home/paul/Project/ur10e_rg2_PickAndPlace/ROS/src/ur10e_rg2_moveit/srv/MoverService.srv")
