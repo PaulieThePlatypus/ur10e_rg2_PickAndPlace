@@ -7158,10 +7158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1645827014}
-  - component: {fileID: 1645827016}
-  - component: {fileID: 1645827013}
   - component: {fileID: 1645827015}
-  - component: {fileID: 1645827017}
   m_Layer: 0
   m_Name: Publisher
   m_TagString: Untagged
@@ -7169,22 +7166,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1645827013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645827012}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8921ca9dacbc5b622bddbbaa3f80e4a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TopicName: /ur10e_joints
-  m_UR10e: {fileID: 1447473376}
-  m_Target: {fileID: 908807630}
-  m_TargetPlacement: {fileID: 1960802762}
 --- !u!4 &1645827014
 Transform:
   m_ObjectHideFlags: 0
@@ -7218,33 +7199,6 @@ MonoBehaviour:
   m_TargetPlacement: {fileID: 1960802762}
   m_Table: {fileID: 1061108348}
   m_Printer: {fileID: 117336935}
---- !u!114 &1645827016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645827012}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daa9276082e7b6f3594ec53b8829823d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  topicName: simple_topic
---- !u!114 &1645827017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645827012}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcf32eb973dac6b60afb82f9553f82c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TopicName: /collision_object
-  m_Table: {fileID: 1061108348}
 --- !u!1 &1647330934
 GameObject:
   m_ObjectHideFlags: 0
