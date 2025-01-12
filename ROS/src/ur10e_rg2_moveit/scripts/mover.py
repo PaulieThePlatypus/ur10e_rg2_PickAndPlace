@@ -52,7 +52,7 @@ def plan_trajectory(move_group, destination_pose, start_joint_angles, max_attemp
             moveit_robot_state.joint_state = current_joint_state
             move_group.set_start_state(moveit_robot_state)
 
-            move_group.set_planner_id("RRTConnect")
+            move_group.set_planner_id("RRT")
             move_group.set_planning_time(15.0)
 
             move_group.set_pose_target(destination_pose)
