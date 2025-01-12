@@ -16,19 +16,11 @@ This project is a part of a module taught at Vietnamese-German University (VGU),
 If you have not already cloned this project to your local machine, do so now:
 
 ```bash
-<<<<<<< HEAD
 git clone --recurse-submodules https://github.com/PaulieThePlatypus/ur10e_rg2_PickAndPlace.git
 ```
 
 # ROS Download
 1. Navigate to the `/PATH/TO/ur10e_rg2_PickAndPlace/ROS` directory of this downloaded repo.
-=======
-git clone --recurse-submodules https://github.com/letrnhan2003/ur10e_rg2_PicknPlace.git
-```
-
-# ROS Download
-1. Navigate to the `/PATH/TO/ur10e_rg2_PicknPlace/ROS` directory of this downloaded repo.
->>>>>>> f6261625262de32d708640b152d29d7cbda9ad99
    - This directory will be used as the [ROS catkin workspace](http://wiki.ros.org/catkin/Tutorials/using_a_workspace).
    - If you cloned the project and forgot to use `--recurse-submodules`, or if any submodule in this directory doesn't have content, you can run the command `git submodule update --init --recursive` to download packages for Git submodules.
    - Copy or download this directory to your ROS operating system if you are doing ROS operations in another machine, VM, or container.
@@ -57,11 +49,7 @@ git clone --recurse-submodules https://github.com/letrnhan2003/ur10e_rg2_PicknPl
    > - Unity 2021.1: 2021.1.8f1 or later
    > - Unity 2021.2: 2021.2.a16 or later
 
-<<<<<<< HEAD
 3. Go to the "Projects" tab in the Unity Hub, click the "Add" button, and navigate to and select the PickAndPlaceProject directory within this cloned repository (`/PATH/TO/ur10e_rg2_PickAndPlace/UnityProject`) to add the tutorial project to your Hub.
-=======
-3. Go to the "Projects" tab in the Unity Hub, click the "Add" button, and navigate to and select the PickAndPlaceProject directory within this cloned repository (`/PATH/TO/ur10e_rg2_PicknPlace/UnityProject`) to add the tutorial project to your Hub.
->>>>>>> f6261625262de32d708640b152d29d7cbda9ad99
 
 4. Click the newly added project to open it.
 
@@ -73,22 +61,14 @@ git clone --recurse-submodules https://github.com/letrnhan2003/ur10e_rg2_PicknPl
     > The Hierarchy, Scene View, Game View, Play/Pause/Step toolbar, Inspector, Project, and Console windows of the Unity Editor have been highlighted below for reference, based on the default layout. Custom Unity Editor layouts may vary slightly. A top menu bar option is available to re-open any of these windows: Window > General.
 
 
-<<<<<<< HEAD
 6. In the Unity Project window, navigate to `Assets/Prefabs`. Select the Table prefab, and click and drag it into the Hierarchy window. The table should appear in the Scene view. Then, select and drag the Target into the Hierarchy window, as well as the TargetPlacement. They should appear to sit on the table. Then in the Inspector window re-scale the Table into: Position `(0.0, -0.64, 0)`, scale `(3, 0.64, 3)`
-=======
-6. In the Unity Project window, navigate to `Assets/Prefabs`. Select the Table prefab, and click and drag it into the Hierarchy window. The table should appear in the Scene view. Then, select and drag the Target into the Hierarchy window, as well as the TargetPlacement. They should appear to sit on the table. Then in the Inspector window re-scale the Table into: Position `(0.0, -0.64, 0)`, scale `(3, 0.64)`
->>>>>>> f6261625262de32d708640b152d29d7cbda9ad99
 
 
 7. Select the `Main Camera` in the Hierarchy. Move the camera to a more convenient location for viewing the robot by assigning the `Main Camera`'s Position to `(0, 1.5, -2.5)`, and the Rotation to `(40, 0, 0)` in the Inspector, which can be found in the Transform component.
 
 
 
-<<<<<<< HEAD
 8. In the Unity Project window, navigate to `Assets/Import`. Select the Printer prefab `(imported.prefab)`, and click and drag it into the Hierarchy window. The Printer should appear in the Scene view. Then, select and drag the Target into the Hierarchy window, as well as the TargetPlacement. They should appear to sit on the table. Then in the Inspector window re-scale the Printer into: Position `(1.184, -0.01, -0.01)`, Rotation `(-90, 180, 90)` ,scale `(3.5, 2, 2.5)`. Modify the Target Position `(1.075, 0.168, 0.08)` and scale `(2, 2, 2)` such that it goes inside the Printer and set the TargetPlacement Position `(-0.73, 0, -0.5)` and scale `(0.1, 0.02, 0.1)` such that it locates ouside the Printer.
-=======
-8. In the Unity Project window, navigate to `Assets/Import`. Select the Printer prefab `(imported.prefab)`, and click and drag it into the Hierarchy window. The Printer should appear in the Scene view. Then, select and drag the Target into the Hierarchy window, as well as the TargetPlacement. They should appear to sit on the table. Then in the Inspector window re-scale the Printer into: Position `(0.72, 0.15, -0.714)`, Rotation `(0, 180, 180)` ,scale `(1, 1, 1)`. Modify the Target Position `(0.724, 0.031, -0.873)` and scale `(2, 2, 2)` such that it goes inside the Printer and set the TargetPlacement Position `(-0.9, 0, -0.9)` and scale `(0.1, 0.02, 0.1)` such that it locates ouside the Printer.
->>>>>>> f6261625262de32d708640b152d29d7cbda9ad99
 
 # Setting up the robot
 > Note: Presumably when you opened this project, the Package Manager automatically checked out and built the URDF-Importer package for you. You can double-check this now by looking for `Packages/URDF-Importer` in the Project window or by opening the Package Manager window. See the [Quick Setup](../quick_setup.md) steps for adding this package to your own project.
@@ -105,31 +85,19 @@ git clone --recurse-submodules https://github.com/letrnhan2003/ur10e_rg2_PicknPl
 
     > Note: VHACD algorithm produces higher quality convex hull for collision detection than the default algorithm.
 
-<<<<<<< HEAD
     > Note: The world-space origin of the robot is defined in its URDF file. In this sample, we have assigned it to sit on top of the table, which is at `(0, 0, 0)` with scale `(1, 1, 1)` in Unity coordinates.
-=======
-    > Note: The world-space origin of the robot is defined in its URDF file. In this sample, we have assigned it to sit on top of the table, which is at `(0, 0.63, 0)` in Unity coordinates.
->>>>>>> f6261625262de32d708640b152d29d7cbda9ad99
 
     ```xml
     <joint name="joint_world" type="fixed">
         <parent link="world" />
             <child link="base_link" />
-<<<<<<< HEAD
         <origin xyz="0 0 0" rpy="0 0 0" />
-=======
-        <origin xyz="0 0 0.63" rpy="0 0 0" />
->>>>>>> f6261625262de32d708640b152d29d7cbda9ad99
     </joint>
     ```
 
     > Note: Going from Unity world space to ROS world space requires a conversion. Unity's `(x,y,z)` is equivalent to the ROS `(z,-x,y)` coordinate.
 
-<<<<<<< HEAD
 4. Select the newly imported `ur10e_robot_rg2` object in the Scene Hierarchy, and from the Inspector window, find the Controller (Script) component. Set the Stiffness to `10000`, the Damping to `100` and `Force Limit` to `1000`. Set the Speed to `0.5` and the Acceleration to `0.25`.
-=======
-4. Select the newly imported `ur10e_robot_rg2` object in the Scene Hierarchy, and from the Inspector window, find the Controller (Script) component. Set the Stiffness to `10000`, the Damping to `100` and `Force Limit` to `1000`. Set the Speed to `1` and the Acceleration to `1`.
->>>>>>> f6261625262de32d708640b152d29d7cbda9ad99
     ![](img/1_controller.png)
 
 5. In the Hierarchy window, click the arrow to the left of the name to expand the GameObject tree, down to `ur10e_robot_rg2/world/base_link`. Toggle on `Immovable` for the `base_link`.
@@ -147,11 +115,7 @@ To enable communication between Unity and ROS, a TCP endpoint running as a ROS n
    Select `Robotics -> Generate ROS Messages...` from the top menu bar.
 
 
-<<<<<<< HEAD
    In the ROS Message Browser window, click `Browse` next to the ROS message path. Navigate to and select the ROS directory of this cloned repository (`ur10e_rg2_PickAndPlace/ROS/`). This window will populate with all msg and srv files found in this directory.
-=======
-   In the ROS Message Browser window, click `Browse` next to the ROS message path. Navigate to and select the ROS directory of this cloned repository (`ur10e_rg2_PicknPlace/ROS/`). This window will populate with all msg and srv files found in this directory.
->>>>>>> f6261625262de32d708640b152d29d7cbda9ad99
 
 
 
@@ -219,11 +183,7 @@ To enable communication between Unity and ROS, a TCP endpoint running as a ROS n
 
 6. Note that this component shows empty member variables in the Inspector window, which need to be assigned.
 
-<<<<<<< HEAD
    Select the Target object in the Hierarchy and assign it to the `Target` field in the Publisher. Similarly, assign the TargetPlacement object to the `TargetPlacement` field. Assign the ur10e_robot_rg2 robot to the `UR10e` field. Assign `Ros Service Name` ur10e_gr2_moveit. Assign `Printer` with 2-makerbot-3. Assign `Table` with Table.
-=======
-   Select the Target object in the Hierarchy and assign it to the `Target` field in the Publisher. Similarly, assign the TargetPlacement object to the `TargetPlacement` field. Assign the ur10e_robot_rg2 robot to the `UR10e` field. Assign `Ros Service Name` ur10e_gr2_moveit. Assign `Printer` with 2-makerbot-3. Assign `Table` with Table
->>>>>>> f6261625262de32d708640b152d29d7cbda9ad99
 
    ![](img/2_target.gif)
 
@@ -250,11 +210,7 @@ To enable communication between Unity and ROS, a TCP endpoint running as a ROS n
 
 9. Select the newly made Button object, and scroll to see the Button component in the Inspector. Click the `+` button under the empty `OnClick()` header to add a new event. Select the `Publisher` object in the Hierarchy window and drag it into the new OnClick() event, where it says `None (Object)`. Click the dropdown where it says `No Function`. Select TrajectoryPlanner > `PublishJoints()`.
 
-<<<<<<< HEAD
    ![](img/2_onclick.gif)
-=======
-   ![](img/2_onclick.png)
->>>>>>> f6261625262de32d708640b152d29d7cbda9ad99
 
 10. To change the text of the Button, expand the Button Hierarchy and select Text. Change the value in Text on the associated component.
 
@@ -285,9 +241,5 @@ To enable communication between Unity and ROS, a TCP endpoint running as a ROS n
 
 ROS and Unity have now successfully connected!
 
-<<<<<<< HEAD
    ![](img/2_echo.gif)
-=======
-   ![](img/2_echo.png)
->>>>>>> f6261625262de32d708640b152d29d7cbda9ad99
 
