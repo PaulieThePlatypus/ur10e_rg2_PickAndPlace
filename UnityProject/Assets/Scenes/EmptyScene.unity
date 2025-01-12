@@ -1013,7 +1013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4792146722229160395, guid: d01bdbfb9ce5ee3c89fc25d4c74eac6b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.7
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4792146722229160395, guid: d01bdbfb9ce5ee3c89fc25d4c74eac6b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1021,7 +1021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4792146722229160395, guid: d01bdbfb9ce5ee3c89fc25d4c74eac6b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.6
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4792146722229160395, guid: d01bdbfb9ce5ee3c89fc25d4c74eac6b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1029,11 +1029,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4792146722229160395, guid: d01bdbfb9ce5ee3c89fc25d4c74eac6b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.010079995
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4792146722229160395, guid: d01bdbfb9ce5ee3c89fc25d4c74eac6b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.010211587
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4792146722229160395, guid: d01bdbfb9ce5ee3c89fc25d4c74eac6b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1716,15 +1716,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 850690186460591411, guid: 43bef545df3e344c4a7e089ca90c15a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7313381
+      value: -0.73
       objectReference: {fileID: 0}
     - target: {fileID: 850690186460591411, guid: 43bef545df3e344c4a7e089ca90c15a0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00007998198
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 850690186460591411, guid: 43bef545df3e344c4a7e089ca90c15a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.49605787
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 850690186460591411, guid: 43bef545df3e344c4a7e089ca90c15a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2688,7 +2688,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1645827015}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TrajectoryPlanner, Unity.Robotics.PickAndPlace
         m_MethodName: PublishJoints
         m_Mode: 1
@@ -7060,10 +7060,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1645827014}
-  - component: {fileID: 1645827016}
   - component: {fileID: 1645827013}
   - component: {fileID: 1645827015}
-  - component: {fileID: 1645827017}
   m_Layer: 0
   m_Name: Publisher
   m_TagString: Untagged
@@ -7108,7 +7106,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645827012}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a250ac82abb56489eb25080b9e940172, type: 3}
   m_Name: 
@@ -7119,34 +7117,7 @@ MonoBehaviour:
   m_Target: {fileID: 908807630}
   m_TargetPlacement: {fileID: 1960802762}
   m_Table: {fileID: 1061108348}
-  m_Printer: {fileID: 117336935}
---- !u!114 &1645827016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645827012}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daa9276082e7b6f3594ec53b8829823d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  topicName: simple_topic
---- !u!114 &1645827017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645827012}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcf32eb973dac6b60afb82f9553f82c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TopicName: /collision_object
-  m_Table: {fileID: 1061108348}
+  m_Printer: {fileID: 464391582}
 --- !u!1 &1647330934
 GameObject:
   m_ObjectHideFlags: 0
@@ -8736,7 +8707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5113255398182140587, guid: 3901759e6233748538fffdbc519c1a68, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.135
+      value: 0.168
       objectReference: {fileID: 0}
     - target: {fileID: 5113255398182140587, guid: 3901759e6233748538fffdbc519c1a68, type: 3}
       propertyPath: m_LocalPosition.z
